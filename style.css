@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+
+:root{
+    --grey: #606060;
+    --lightgrey: #F0F0F0;
+    --cyan: #00FFFF;
+    --white: #FFFF; 
+
+    --maxwidth: 800px;
+    --rootsize: 20px;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: var(--rootsize);
+    width: 100%;
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+
+
+header {
+    border: 1px solid var(--grey);
+    color: var(--grey);
+    overflow: hidden;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+
+nav {
+    overflow: hidden;
+    padding-top: 1.5rem;
+  }
+  
+  
+  nav button {
+    background-color: var(--lightgrey);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin: 0 0.3rem 0 0;
+    transition: 0.3s;
+    color: var(--grey);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  
+  nav button:hover {
+    background-color: #ddd;
+  }
+  
+
+  nav button.active {
+    background-color: var(--cyan);
+    color: var(--white);
+  }
+  
+
+  .tab {
+    display: none;
+    padding: 6px 12px;
+    border-top: 10px solid var(--cyan);
+    border-left: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
+    overflow: hidden;
+    padding: 2rem; 
+  }
